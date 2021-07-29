@@ -1,0 +1,71 @@
+body {
+  background-color: black;
+  font-family: monospace;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+a {
+  cursor: pointer;
+  color: orange;
+  border: 2px solid orange;
+  padding: 2px 6px 2px 6px;
+  user-select: none;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: orange;
+}
+#Header {
+  text-align: center;
+  background-color: black;
+  border-bottom: 2px solid orange;
+  box-sizing: border-box;
+  color: orange;
+  width: 100vw;
+  height: 100px;
+  z-index: 10;
+  position: fixed;
+  /* margin: 0 auto; */
+  top: 0;
+}
+#Box {
+  /* z-index: 1; */
+  /* border: 1px solid orange; */
+  /* background-color: black; */
+  /* text-align: center; */
+  color: orange;
+  box-sizing: border-box;
+  position: absolute;
+  width: 600px;
+  height: 30px;
+  left: 200px;
+  top: 300px;
+}
+.echoes {
+  z-index: 2;
+  border: 2px solid orange;
+  background-color: black;
+  /* box-shadow: 0 0 3px 3px orange, inset 0 0 3px 3px orange; */
+  box-sizing: border-box;
+  position: absolute;
+  /* trying to animate: */
+  transition: box-shadow 2s, border 4s;
+}
+/* .echoesFade {
+  border: 1px solid black;
+  box-shadow: 0 0 3px 3px black, inset 0 0 3px 3px black;
+} */
+
+#testId3 {
+  position: absolute;
+  z-index: 3;
+  margin-left: 286px;
+}
+
+#home {
+  position: fixed;
+  left: 30px;
+  top: 30px;
+}
