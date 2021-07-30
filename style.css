@@ -44,7 +44,7 @@ a:hover {
   top: 300px;
 }
 .echoes {
-  z-index: 2;
+  z-index: 9;
   border: 2px solid orange;
   background-color: black;
   /* box-shadow: 0 0 3px 3px orange, inset 0 0 3px 3px orange; */
@@ -52,6 +52,10 @@ a:hover {
   position: absolute;
   /* trying to animate: */
   transition: box-shadow 2s, border 4s;
+  background: -webkit-linear-gradient(90deg,  rgba(0,0,0,1) 10%, transparent 10%, transparent),
+              -webkit-linear-gradient(0deg,   rgba(0,0,0,1) 10%, transparent 10%, transparent),
+              -webkit-linear-gradient(-90deg, rgba(0,0,0,1) 10%, transparent 10%, transparent),
+              -webkit-linear-gradient(180deg, rgba(0,0,0,1) 10%, transparent 10%, transparent);
 }
 /* .echoesFade {
   border: 1px solid black;
@@ -68,4 +72,5 @@ a:hover {
   position: fixed;
   left: 30px;
   top: 30px;
+  z-index: 4;
 }
