@@ -52,10 +52,11 @@ a:hover {
   position: absolute;
   /* trying to animate: */
   transition: box-shadow 2s, border 4s;
-  background: -webkit-linear-gradient(90deg,  rgba(0,0,0,1) 10%, transparent 10%, transparent),
+  /* this was a solid attempt at keeping the content visible while echoing: */
+  /* background: -webkit-linear-gradient(90deg,  rgba(0,0,0,1) 10%, transparent 10%, transparent),
               -webkit-linear-gradient(0deg,   rgba(0,0,0,1) 10%, transparent 10%, transparent),
               -webkit-linear-gradient(-90deg, rgba(0,0,0,1) 10%, transparent 10%, transparent),
-              -webkit-linear-gradient(180deg, rgba(0,0,0,1) 10%, transparent 10%, transparent);
+              -webkit-linear-gradient(180deg, rgba(0,0,0,1) 10%, transparent 10%, transparent); */
 }
 /* .echoesFade {
   border: 1px solid black;

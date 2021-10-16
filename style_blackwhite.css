@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+    font-family: monospace;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    cursor: pointer;
+    color: white;
+    border: 2px solid white;
+    padding: 2px 6px 2px 6px;
+    user-select: none;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+    background-color: white;
+  }
+  #Header {
+    text-align: center;
+    background-color: black;
+    border-bottom: 2px solid white;
+    box-sizing: border-box;
+    color: white;
+    width: 100vw;
+    height: 100px;
+    z-index: 10;
+    position: fixed;
+    /* margin: 0 auto; */
+    top: 0;
+  }
+  #Box {
+    /* z-index: 1; */
+    /* border: 1px solid white; */
+    /* background-color: black; */
+    /* text-align: center; */
+    color: white;
+    box-sizing: border-box;
+    position: absolute;
+    width: 600px;
+    height: 30px;
+    left: 200px;
+    top: 300px;
+  }
+  .echoes {
+    z-index: 9;
+    border: 2px solid white;
+    background-color: black;
+    /* box-shadow: 0 0 3px 3px white, inset 0 0 3px 3px white; */
+    box-sizing: border-box;
+    position: absolute;
+    /* trying to animate: */
+    transition: box-shadow 2s, border 4s;
+    /* this was a solid attempt at keeping the content visible while echoing: */
+    /* background: -webkit-linear-gradient(90deg,  rgba(0,0,0,1) 10%, transparent 10%, transparent),
+                -webkit-linear-gradient(0deg,   rgba(0,0,0,1) 10%, transparent 10%, transparent),
+                -webkit-linear-gradient(-90deg, rgba(0,0,0,1) 10%, transparent 10%, transparent),
+                -webkit-linear-gradient(180deg, rgba(0,0,0,1) 10%, transparent 10%, transparent); */
+  }
+  /* .echoesFade {
+    border: 1px solid black;
+    box-shadow: 0 0 3px 3px black, inset 0 0 3px 3px black;
+  } */
+  
+  #testId3 {
+    position: absolute;
+    z-index: 3;
+    margin-left: 286px;
+  }
+  
+  #home {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    z-index: 4;
+  }

@@ -68,7 +68,18 @@ async function echoLoopOut () {
     // Box = getBox.getBoundingClientRect();
     // viewportWidth = (window.innerWidth - Box.width);
     // viewportHeight = (window.innerHeight - Box.height);
-    for(let i = 1; i <= 99; i++) {
+
+    // WORKS:
+    // for(let i = 1; i <= 99; i++) {
+    //   await sleep(10); // adjust to control loop timing
+    //   if (i % 3 == 0) {
+    //     divToRemove = document.getElementById("number" + i);
+    //     divToRemove.remove();
+    //   }
+    // }
+
+    // WORKS (opposite way from the function above):
+    for(let i = 99; i >= 1; i--) {
       await sleep(10); // adjust to control loop timing
       if (i % 3 == 0) {
         divToRemove = document.getElementById("number" + i);
